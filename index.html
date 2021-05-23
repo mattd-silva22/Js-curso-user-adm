@@ -10,6 +10,19 @@
   <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+
+  <style>
+    .able-form {
+      display: inline;
+    }
+
+    .disable-form {
+      display: none;
+    }
+
+
+   
+  </style>
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -197,7 +210,7 @@
             <!-- ./col -->
           </div>
 
-          <div class="box box-primary">
+          <div class="box box-primary " id="form-register">
             <div class="box-header with-border">
               <h3 class="box-title">Novo Usuário</h3>
             </div>
@@ -499,7 +512,7 @@
           </div>
 
 
-          <div class="box box-success">
+          <div class="box box-success  disable-form" id="form-edit">
             <div class="box-header with-border">
               <h3 class="box-title">Editar Usuário</h3>
             </div>
@@ -795,8 +808,8 @@
               </div>
               <!-- /.box-body -->          
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Salvar</button>
-                <button  class="btn btn-default">Cancelar</button>
+                <button type="submit" class="btn btn-primary btn-edit-save">Salvar</button>
+                <button  class="btn btn-default btn-edit-cancel">Cancelar</button>
               </div>
             </form>
           </div>
